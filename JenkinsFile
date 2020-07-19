@@ -1,0 +1,15 @@
+pipeline {
+ agent any
+
+  stage('test') {
+    steps {
+      sh(script: "dotnet test", returnStdout: true)
+    }
+  }
+
+  stage('build') {
+    steps {
+      sh(script: "dotnet build --configuration Release", returnStdout: true)
+    }
+  }
+}
