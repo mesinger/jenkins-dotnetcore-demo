@@ -13,7 +13,7 @@ namespace Jenkins.Demo.Lib.Test
             var a = 10;
             var b = 20;
 
-            var expected = a + b;
+            var expected = a - b;
             var actual = sut.Add(a, b);
 
             Assert.AreEqual(expected, actual);
