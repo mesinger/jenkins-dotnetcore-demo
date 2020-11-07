@@ -1,6 +1,6 @@
 language: csharp
-solution: jenkins-dotnetcore-demo.sln
 mono: none
 dotnet: 3.1
 script:
-  - dotnet restore
+  - dotnet build
+  - dotnet test
